@@ -26,16 +26,19 @@ This diagram illustrates the flow of data from generating synthetic datasets to 
 +------------------+
         |
         V
+        
 +------------------+
 | Flask App Setup  |
 +------------------+
         |
         V
+        
 +---------------------------+
 | Generate Synthetic Data   |
 +---------------------------+
         |
         V
+        
 +----------------------------+
 | Preprocess Data            |
 | - Scale Data               |
@@ -52,6 +55,7 @@ This diagram illustrates the flow of data from generating synthetic datasets to 
 +----------------------------+
         |
         V
+        
 +----------------------------+
 | Train CNN Model            |
 | - Fit on Train Data        |
@@ -59,6 +63,7 @@ This diagram illustrates the flow of data from generating synthetic datasets to 
 +----------------------------+
         |
         V
+        
 +----------------------------+
 | Flask Routes               |
 | - Route '/' for UI         |
@@ -77,6 +82,7 @@ This diagram illustrates the flow of data from generating synthetic datasets to 
 +----------------------------+
         |
         V
+        
 +----------------------------+
 | Run Flask App              |
 | - Host Web Application     |
