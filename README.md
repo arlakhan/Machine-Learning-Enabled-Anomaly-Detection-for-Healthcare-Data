@@ -20,73 +20,8 @@ The /predict route handles prediction requests and returns results for randomly 
 Prediction Logic: For the /predict route, the model predicts whether a sample is "Normal" or "Anomaly" based on the test data.
 Run Flask: Finally, the Flask app is run to make the web application accessible.
 This diagram illustrates the flow of data from generating synthetic datasets to serving predictions through a web interface.
+![image](https://github.com/user-attachments/assets/315f0e0d-0e2d-4e60-a8ba-42e080eaed68)
 
-+------------------+
-|  Import Libraries|
-+------------------+
-        |
-        V
-        
-+------------------+
-| Flask App Setup  |
-+------------------+
-        |
-        V
-        
-+---------------------------+
-| Generate Synthetic Data   |
-+---------------------------+
-        |
-        V
-        
-+----------------------------+
-| Preprocess Data            |
-| - Scale Data               |
-| - Split Data               |
-+----------------------------+
-        |
-        V
-+----------------------------+
-| Create CNN Model           |
-| - Conv1D Layers            |
-| - MaxPooling1D Layers      |
-| - Dense Layers             |
-| - Compile Model            |
-+----------------------------+
-        |
-        V
-        
-+----------------------------+
-| Train CNN Model            |
-| - Fit on Train Data        |
-| - Validate on Test Data    |
-+----------------------------+
-        |
-        V
-        
-+----------------------------+
-| Flask Routes               |
-| - Route '/' for UI         |
-| - Route '/predict' for     |
-|   Anomaly Detection        |
-+----------------------------+
-        |
-        V
-+----------------------------+
-| Prediction Function        |
-| - Select Random Samples    |
-| - Predict Using Trained    |
-|   Model                    |
-| - Return Results (Anomaly/ |
-|   Normal) with Confidence  |
-+----------------------------+
-        |
-        V
-        
-+----------------------------+
-| Run Flask App              |
-| - Host Web Application     |
-+----------------------------+
 
 
 import numpy as np
